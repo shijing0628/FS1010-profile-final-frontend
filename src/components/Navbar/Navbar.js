@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 import Dropdown from "../Dropdown/Dropdown";
 import Button from "../Button/Button";
+import brendalogo from "../../images/brendalogo.svg";
 
 export class Navbar extends Component {
   state = {
@@ -40,7 +41,10 @@ export class Navbar extends Component {
     return (
       <nav className="navbar">
         <Link to="/" className="navbar-logo">
-          Brenda <i className="fab fa-firstdraft"></i>
+          Brenda{" "}
+          <span>
+            <img src={brendalogo} alt="logo" />
+          </span>
         </Link>
         <div className="menu-icon" onClick={this.handleClick}>
           <i className={click ? "fa fa-times" : "fa fa-bars"}></i>

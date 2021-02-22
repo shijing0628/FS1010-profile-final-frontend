@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
 import axios from "axios";
 import { TextField, Button, Container, Grid } from "@material-ui/core";
 import "./ContactForm.css";
@@ -46,7 +45,7 @@ class ContactForm extends Component {
   handleChangeEmail(e) {
     if (
       !e.target.value.match(
-        /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
       )
     ) {
       this.setState({
@@ -97,7 +96,13 @@ class ContactForm extends Component {
   render() {
     return (
       <Grid xs={12} spacing={3}>
-        <Container>
+        <Container
+          justify="center"
+          direction="column"
+          alignItems="center"
+          display="flex"
+          className="contact-container"
+        >
           <h1 className="contact-title">Contact Me</h1>
 
           <form className="contact-form" onSubmit={(e) => this.formSubmit(e)}>
