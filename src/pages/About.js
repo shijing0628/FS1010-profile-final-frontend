@@ -13,6 +13,7 @@ import Avatar from "@material-ui/core/Avatar";
 import Pagination from "@material-ui/lab/Pagination";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import { useHistory } from "react-router-dom";
+import Model from "../components/VideoModel/VideoModel";
 import pic1 from "../../src/images/pic1.jpg";
 import backGround from "../../src/images/mywork-bg.jpg";
 import pic2 from "../../src/images/pic2.jpg";
@@ -41,6 +42,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundSize: "cover",
     position: "relative",
     display: "flex",
+    flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
     color: "#fff",
@@ -93,6 +95,7 @@ function About() {
     <ThemeProvider theme={theme}>
       <Box className={classes.hero}>
         <Box>About My Work</Box>
+        <Model />
       </Box>
 
       <Container maxWidth="lg" className={classes.blogsContainer}>
