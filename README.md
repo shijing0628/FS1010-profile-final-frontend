@@ -37,3 +37,10 @@ npm run dev
 - particles-bg package for background decoration of dashboard page and register page
 - sass styles on skills page
 - customized sliders in figma
+
+![](2021-02-22-10-33-11.png)
+
+![](2021-02-22-10-33-38.png)
+![](2021-02-22-10-33-59.png)
+![](2021-02-22-10-34-22.png)
+![](2021-02-22-10-34-41.png)

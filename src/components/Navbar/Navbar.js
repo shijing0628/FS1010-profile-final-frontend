@@ -41,9 +41,9 @@ export class Navbar extends Component {
     return (
       <nav className="navbar">
         <Link to="/" className="navbar-logo">
-          Brenda{" "}
+          Brenda
           <span>
-            <img src={brendalogo} alt="logo" />
+            <img src={brendalogo} alt="logo" className="mylogo" />
           </span>
         </Link>
         <div className="menu-icon" onClick={this.handleClick}>
@@ -77,6 +77,8 @@ export class Navbar extends Component {
             >
               Work
             </Link>
+          </li>
+          <li className="nav-item">
             <Link
               to="/skills"
               className="nav-links"
