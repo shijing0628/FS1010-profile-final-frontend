@@ -165,7 +165,7 @@ function About() {
               </CardActionArea>
               <CardActions className={classes.cardActions}>
                 <Box className={classes.author}>
-                  <Avatar src="https://cdn.freebiesupply.com/logos/large/2x/react-1-logo-png-transparent.png" />
+                  <Avatar src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png" />
                   <Box ml={2}>
                     <Typography variant="subtitle2" component="p">
                       Brenda Liu
@@ -205,7 +205,7 @@ function About() {
               </CardActionArea>
               <CardActions className={classes.cardActions}>
                 <Box className={classes.author}>
-                  <Avatar src="https://cdn.freebiesupply.com/logos/large/2x/react-1-logo-png-transparent.png" />
+                  <Avatar src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png" />
                   <Box ml={2}>
                     <Typography variant="subtitle2" component="p">
                       Brenda Liu
