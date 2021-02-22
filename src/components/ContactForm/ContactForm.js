@@ -103,7 +103,7 @@ class ContactForm extends Component {
           display="flex"
           className="contact-container"
         >
-          <h1 className="contact-title">Contact Me</h1>
+          <h1 className="contact-title">Contact</h1>
 
           <form className="contact-form" onSubmit={(e) => this.formSubmit(e)}>
             <TextField

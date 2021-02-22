@@ -36,3 +36,4 @@ npm run dev
 - If validation failed, we will get 400 error and in userAction.js file-> loginUser function will catch that error, and we can display the error message by using formik setFieldError. (each input tag has to include name="email" etc because the setFieldError distingush the error info from name property.)
 - particles-bg package for background decoration of dashboard page and register page
 - sass styles on skills page
+- customized sliders in figma

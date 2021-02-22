@@ -21,14 +21,16 @@
   height: 0.5rem;
   background-color: red;
   margin-left: 1rem;
-  background-color: #0381ff3f;
+  background-color: #e3d0ff;
   position: relative;
+  border-radius: 10px;
 }
 
 .skills-container .skill-bar .skill-progress .progress .inner-pregress {
   position: absolute;
-  background-color: #47c1bf;
+  background-color: #9c6ade;
   height: 100%;
+  border-radius: 10px;
   bottom: 0;
   left: 0;
 }

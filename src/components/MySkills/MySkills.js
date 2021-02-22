@@ -25,7 +25,7 @@ export default function MySkills() {
         <SkillsSection skill={"UI/Ux Design"} progress={"76%"} width={"76%"} />
       </div>
 
-      <Tittle title={"Services"} span={"Services"} />
+      <Tittle title={"Services"} />
       <div className="servives-container">
         <ServicesSection
           image={design1}

@@ -3,8 +3,9 @@
     width: 95%;
     border-left: 1px solid #6f84e2;
     border-right: 1px solid #a1b0f1;
-    border-bottom: 1px solid #41dfeb;
-    border-top: 8px solid #2fa9fa;
+    border-bottom: 1px solid #e3d0ff;
+    border-top: 8px solid #e3d0ff;
+    border-radius: 10px;
     transition: all 0.4s ease-in-out;
     @media screen and (max-width: 1400px) {
       width: 100%;
