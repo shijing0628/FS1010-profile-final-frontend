@@ -1,15 +1,19 @@
-import { Link } from "@material-ui/core";
 import React from "react";
+import cv from "../../files/full-stack-brenda.pdf";
+import me from "../../images/me.jpg";
 
 export default function ImageSection() {
+  const openResume = () => {
+    window.open(cv);
+  };
   return (
     <div className="ImageSection">
       <div className="img">
-        <img alt="" />
+        <img src={me} alt="brenda liu" />
       </div>
       <div className="about-info">
         <h4>
-          I am<span> Lorem Ipsum</span>
+          I am<span> Brenda Liu</span>
         </h4>
         <p className="about-text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
@@ -19,24 +23,23 @@ export default function ImageSection() {
         <div className="about-details">
           <div className="left-section">
             <p>Full Name</p>
-            <p>Age</p>
             <p>Nationality</p>
             <p>Languages</p>
             <p>Address</p>
             <p>Countries</p>
           </div>
           <div className="right-section">
-            <p>: Lorem Ipsum</p>
-            <p>: 50</p>
-            <p>: French</p>
-            <p>: French, Spanish, English</p>
-            <p>: 2 Beightbridge, BN7 GB9, United kingdom</p>
-            <p>: France, Spain, Germany</p>
+            <p>: Brenda Liu</p>
+            <p>: Chinese</p>
+            <p>: Mandarin, English, Japanese</p>
+            <p>: 123 Street, BN7 GB9, Winnipeg</p>
+            <p>: Canada</p>
           </div>
         </div>
-        <Link>
-          <button className="btn">Download CV</button>
-        </Link>
+
+        <button className="btn" onClick={openResume}>
+          Download CV
+        </button>
       </div>
     </div>
   );

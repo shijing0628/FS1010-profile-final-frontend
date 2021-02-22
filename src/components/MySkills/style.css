@@ -1,7 +1,7 @@
 .AboutPage {
   max-width: 70%;
   margin: auto;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .ImageSection {
@@ -19,8 +19,8 @@
 
 .ImageSection .img img {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   height: 100%;
 }
 
@@ -64,13 +64,13 @@
 }
 
 .btn {
-  padding: 1rem 2rem;
-  background-color: #50b83c;
+  padding: 1.5rem;
+  background-color: transparent;
   outline: none;
-  border: none;
+  text-align: center;
   font-family: inherit;
   font-size: inherit;
-  color: white;
+  color: #ed6347;
   text-transform: uppercase;
   cursor: pointer;
   letter-spacing: 2px;

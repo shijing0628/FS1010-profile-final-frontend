@@ -5,14 +5,14 @@ import ImageFour from "../images/slide4.jpg";
 
 export const SliderData = [
   {
-    title: "Cookie Store (JS)",
+    title: "Cookie Store",
     path: "/about",
     label: "My work",
     image: ImageOne,
     alt: "Cookie Store (JS)",
   },
   {
-    title: "Covid Tracker (React)",
+    title: "Covid Tracker",
     path: "/about",
     label: "My work",
     image: ImageTwo,
