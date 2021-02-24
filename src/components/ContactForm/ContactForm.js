@@ -10,13 +10,13 @@ const MyTextField = withStyles({
       color: "grey",
     },
     "& .MuiFormLabel-root": {
-      color: "green",
+      color: "#9C6ADE",
     },
     "& .MuiOutlinedInput-notchedOutline": {
-      borderColor: "green",
+      borderColor: "#9C6ADE",
     },
     "& .MuiFormHelperText-root": {
-      color: "green",
+      color: "#9C6ADE",
     },
   },
 })(TextField);
