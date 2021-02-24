@@ -4,7 +4,7 @@
 }
 
 a.social {
-  margin: 0 1rem;
+  margin: 0 0.5rem;
   transition: transform 250ms;
   display: inline-block;
 }
@@ -15,28 +15,30 @@ a.social:hover {
 
 a.youtube {
   color: #eb3223;
+  font-size: 22px;
 }
 
 a.facebook {
   color: #4968ad;
+  font-size: 22px;
 }
 a.linkedin {
   color: #0e76a8;
+  font-size: 22px;
 }
 
 a.twitter {
   color: #49a1eb;
+  font-size: 22px;
 }
 
 a.instagram {
-  background: radial-gradient(
-    circle at 30% 107%,
+  font-size: 22px;
+  background-color: radial-gradient(
     #fdf497 0%,
     #fdf497 5%,
     #fd5949 45%,
     #d6249f 60%,
     #285aeb 90%
   );
-
-  -webkit-text-fill-color: transparent;
 }

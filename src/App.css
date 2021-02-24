@@ -16,6 +16,7 @@
   display: flex;
   align-items: center;
   margin: 20px auto;
+  width: 90%;
 }
 .theme-btn {
   padding: 10px 7px;
