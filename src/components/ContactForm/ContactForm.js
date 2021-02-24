@@ -21,6 +21,19 @@ const MyTextField = withStyles({
   },
 })(TextField);
 
+const ContactBtn = withStyles({
+  root: {
+    "& .MuiButton-label": {
+      color: "#9C6ADE",
+      fontWeight: "600",
+    },
+    "&:hover .MuiButton-label": {
+      color: "#ED6347",
+      fontWeight: "600",
+    },
+  },
+})(Button);
+
 class ContactForm extends Component {
   state = {
     name: "",
@@ -202,9 +215,14 @@ class ContactForm extends Component {
             <br />
 
             <div className="button--container">
-              <Button type="submit" variant="outlined" color="primary">
+              <ContactBtn
+                type="submit"
+                variant="outlined"
+                color="primary"
+                boxShadow={3}
+              >
                 {this.state.buttonText}
-              </Button>
+              </ContactBtn>
             </div>
           </form>
         </Container>
