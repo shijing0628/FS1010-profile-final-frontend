@@ -15,6 +15,10 @@ npm start
 Enable backend repo https://github.com/shijing0628/FS1020-course-project-final at port 5000.
 
 ```
+npm install
+```
+
+```
 npm run dev
 ```
 
