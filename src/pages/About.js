@@ -99,7 +99,7 @@ function About() {
   return (
     <ThemeProvider theme={theme}>
       <Box className={classes.hero}>
-        <Box style={style}>About My Work</Box>
+        <Box style={{ fontFamily: "Lobster" }}>About My Work</Box>
         <Model />
       </Box>
 

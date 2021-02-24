@@ -55,6 +55,7 @@ export class Navbar extends Component {
               Home
             </Link>
           </li>
+
           <li
             className="nav-item"
             onMouseEnter={this.onMouseEnter}
@@ -69,6 +70,7 @@ export class Navbar extends Component {
             </Link>
             {dropdown && <Dropdown />}
           </li>
+
           <li className="nav-item">
             <Link
               to="/about"
@@ -78,6 +80,7 @@ export class Navbar extends Component {
               Work
             </Link>
           </li>
+
           <li className="nav-item">
             <Link
               to="/skills"
@@ -87,6 +90,7 @@ export class Navbar extends Component {
               Skills
             </Link>
           </li>
+
           <li className="nav-item">
             <Link
               to="/contact"
@@ -96,6 +100,7 @@ export class Navbar extends Component {
               Contact
             </Link>
           </li>
+
           <li className="nav-item">
             <Link
               to="/register"
@@ -106,6 +111,7 @@ export class Navbar extends Component {
             </Link>
           </li>
         </ul>
+
         <Button />
       </nav>
     );

@@ -2,6 +2,24 @@ import React, { Component } from "react";
 import axios from "axios";
 import { TextField, Button, Container, Grid } from "@material-ui/core";
 import "./ContactForm.css";
+import { withStyles } from "@material-ui/core/styles";
+
+const MyTextField = withStyles({
+  root: {
+    "& .MuiInputBase-root": {
+      color: "grey",
+    },
+    "& .MuiFormLabel-root": {
+      color: "green",
+    },
+    "& .MuiOutlinedInput-notchedOutline": {
+      borderColor: "green",
+    },
+    "& .MuiFormHelperText-root": {
+      color: "green",
+    },
+  },
+})(TextField);
 
 class ContactForm extends Component {
   state = {
@@ -106,7 +124,7 @@ class ContactForm extends Component {
           <h1 className="contact-title">Contact</h1>
 
           <form className="contact-form" onSubmit={(e) => this.formSubmit(e)}>
-            <TextField
+            <MyTextField
               error={this.state.errors.name}
               id="standard-full-width"
               placeholder="Enter your name"
@@ -125,7 +143,7 @@ class ContactForm extends Component {
             <br />
             <br />
 
-            <TextField
+            <MyTextField
               id="standard-full-width"
               label="Email"
               placeholder="Enter email address"
@@ -144,7 +162,7 @@ class ContactForm extends Component {
             <br />
             <br />
             <br />
-            <TextField
+            <MyTextField
               type="number"
               error={this.state.errors.phoneNumber}
               id="standard-full-width"
@@ -162,7 +180,7 @@ class ContactForm extends Component {
             <br />
             <br />
             <br />
-            <TextField
+            <MyTextField
               id="outlined-textarea"
               error={this.state.errors.content}
               label="Content"

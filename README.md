@@ -37,6 +37,8 @@ npm run dev
 - particles-bg package for background decoration of dashboard page and register page
 - sass styles on skills page
 - customized sliders in figma
+- theme can toggle background color
+- add social media icons
 
 ![](2021-02-22-10-33-11.png)
 
@@ -45,3 +47,5 @@ npm run dev
 ![](2021-02-22-10-34-22.png)
 ![](2021-02-22-10-34-41.png)
 ![](2021-02-22-10-36-40.png)
+![](2021-02-24-09-00-30.png)
+![](2021-02-24-11-54-50.png)

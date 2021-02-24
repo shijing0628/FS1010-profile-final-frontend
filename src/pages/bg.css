@@ -8,4 +8,5 @@
 #particles-js canvas {
   display: block;
   vertical-align: bottom;
+  height: 100%;
 }

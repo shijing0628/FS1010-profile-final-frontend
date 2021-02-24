@@ -9,7 +9,7 @@ export default function ImageSection() {
   return (
     <div className="ImageSection">
       <div className="img">
-        <img src={me} alt="brenda liu" />
+        <img src={me} alt="brenda liu" style={{ transform: "scale(1.1)" }} />
       </div>
       <div className="about-info">
         <h4>
@@ -29,11 +29,11 @@ export default function ImageSection() {
             <p>Countries</p>
           </div>
           <div className="right-section">
-            <p>: Brenda Liu</p>
-            <p>: Chinese</p>
-            <p>: Mandarin, English, Japanese</p>
-            <p>: 123 Street, BN7 GB9, Winnipeg</p>
-            <p>: Canada</p>
+            <p> Brenda Liu</p>
+            <p> Chinese</p>
+            <p> Mandarin, English, Japanese</p>
+            <p> 123 Street, BN7 GB9, Winnipeg</p>
+            <p> Canada</p>
           </div>
         </div>
 

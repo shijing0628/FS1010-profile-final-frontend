@@ -2,7 +2,7 @@
   background-color: #50248f;
   height: 80px;
   display: flex;
-  justify-content: center;
+  /* justify-content: space-evenly; */
   font-size: 1rem;
 }
 
