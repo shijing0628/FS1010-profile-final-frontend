@@ -43,6 +43,7 @@ npm run dev
 - customized sliders in figma
 - theme can toggle background color
 - add social media icons
+- react-notifications-component for successfully submit the contact form
 
 ![](2021-02-22-10-33-11.png)
 
@@ -57,3 +58,4 @@ npm run dev
 
 ![](2021-02-24-14-43-55.png)
 ![](2021-02-24-15-18-28.png)
+![](2021-02-26-10-12-21.png)
