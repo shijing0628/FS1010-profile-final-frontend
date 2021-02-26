@@ -6,6 +6,18 @@ import InputSearch from "../InputSearch/InputSearch";
 import ImageList from "../ImageList/ImageList";
 import { CircularProgress } from "@material-ui/core";
 import Pagination from "@material-ui/lab/Pagination";
+import { withStyles } from "@material-ui/core/styles";
+
+const MyPagination = withStyles({
+  root: {
+    "& .MuiPaginationItem-root": {
+      color: "grey",
+    },
+    "& .MuiInput-root": {
+      color: "grey",
+    },
+  },
+})(Pagination);
 
 //https://unsplash.com/documentation#search-photos
 
@@ -64,7 +76,7 @@ function GalleryImages() {
       <ImageList photos={photos.results} />
       <br></br>
       <div className="pagination-images">
-        <Pagination
+        <MyPagination
           count={10}
           variant="outlined"
           shape="rounded"

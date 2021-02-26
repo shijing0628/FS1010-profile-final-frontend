@@ -26,8 +26,8 @@ import ReactNotification from "react-notifications-component";
 const GlobalStyle = createGlobalStyle`
 body {
   background-color:${(props) =>
-    props.theme.mode === "dark" ? "#111" : "#eee"};
-    color:${(props) => (props.theme.mode === "dark" ? "#eee" : "#111")};
+    props.theme.mode === "dark" ? "#222" : "#eee"};
+    color:${(props) => (props.theme.mode === "dark" ? "#eee" : "#222")};
 }
 `;
 
