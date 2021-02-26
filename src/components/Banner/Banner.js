@@ -80,21 +80,20 @@ const HeroContent = styled.div`
   }
 `;
 const MyButton = styled.div`
-  background-color: #50248f;
   padding: 15px 15px;
-  color: #fff;
   max-width: 150px;
   text-align: center;
   box-shadow: 0px 2px 5px 5px rgba(0, 0, 0, 0.2);
   transition: all 0.5s;
   border-radius: 10px;
+  background-color: #e3d0ff;
+  color: #230051;
+  text-decoration: none;
 
   &:hover,
   &:active {
-    background-color: #ed6347;
-    color: #230051;
-    text-decoration: none;
-    border: none;
+    background-color: #50248f;
+    color: #fff;
   }
 `;
 const Arrow = styled(IoMdArrowRoundForward)`
@@ -121,7 +120,8 @@ const ArrowButtons = css`
 
   &:hover {
     background: #ed6347;
-    transform: scale(1.05);
+    transform: scale(1.1);
+    text-decoration: none;
   }
 `;
 const PrevArrow = styled(IoArrowBack)`
@@ -179,7 +179,9 @@ function Banner({ slides }) {
                   <h1>{slide.title}</h1>
                   <Link to="/about">
                     <MyButton to={slide.path} primary="true">
-                      {slide.label}
+                      <span style={{ textDecoration: "none" }}>
+                        {slide.label}
+                      </span>
                       <Arrow />
                     </MyButton>
                   </Link>

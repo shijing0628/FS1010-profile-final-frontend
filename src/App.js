@@ -21,6 +21,7 @@ import { ThemeProvider, createGlobalStyle } from "styled-components";
 import { useState, useEffect } from "react";
 import storage from "local-storage-fallback";
 import SocialFollow from "./components/SocialFollow/SocialFollow";
+import ReactNotification from "react-notifications-component";
 
 const GlobalStyle = createGlobalStyle`
 body {
@@ -44,6 +45,7 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
+      <ReactNotification />
       <GlobalStyle />
       <Router className="app">
         <Navbar />

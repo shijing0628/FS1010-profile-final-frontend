@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import axios from "axios";
 import { TextField, Button, Container, Grid } from "@material-ui/core";
+import { store } from "react-notifications-component";
+import "react-notifications-component/dist/theme.css";
 import "./ContactForm.css";
 import { withStyles } from "@material-ui/core/styles";
 
@@ -96,7 +98,6 @@ class ContactForm extends Component {
   // submit contact form
   formSubmit = async (e) => {
     e.preventDefault();
-
     let data = {
       name: this.state.name,
       email: this.state.email,
@@ -115,6 +116,21 @@ class ContactForm extends Component {
         this.setState({
           buttonText: "Success Send",
         });
+
+        this.state.sent &&
+          store.addNotification({
+            title: "success submit",
+            message: "Add info to contact form",
+            type: "success",
+            insert: "top",
+            container: "top-right",
+            animationIn: ["animate__animated", "animate__fadeIn"],
+            animationOut: ["animate__animated", "animate__fadeOut"],
+            dismiss: {
+              duration: 4000,
+              onScreen: true,
+            },
+          });
       } catch (error) {
         console.log(error);
         this.setState({
@@ -138,6 +154,7 @@ class ContactForm extends Component {
 
           <form className="contact-form" onSubmit={(e) => this.formSubmit(e)}>
             <MyTextField
+              style={{ marginBottom: "30px" }}
               error={this.state.errors.name}
               id="standard-full-width"
               placeholder="Enter your name"
@@ -152,11 +169,9 @@ class ContactForm extends Component {
                 shrink: true,
               }}
             />
-            <br />
-            <br />
-            <br />
 
             <MyTextField
+              style={{ marginBottom: "30px" }}
               id="standard-full-width"
               label="Email"
               placeholder="Enter email address"
@@ -172,10 +187,9 @@ class ContactForm extends Component {
                 shrink: true,
               }}
             />
-            <br />
-            <br />
-            <br />
+
             <MyTextField
+              style={{ marginBottom: "30px" }}
               type="number"
               error={this.state.errors.phoneNumber}
               id="standard-full-width"
@@ -190,10 +204,9 @@ class ContactForm extends Component {
                 shrink: true,
               }}
             />
-            <br />
-            <br />
-            <br />
+
             <MyTextField
+              style={{ marginBottom: "30px" }}
               id="outlined-textarea"
               error={this.state.errors.content}
               label="Content"
@@ -210,9 +223,6 @@ class ContactForm extends Component {
                 shrink: true,
               }}
             />
-            <br />
-            <br />
-            <br />
 
             <div className="button--container">
               <ContactBtn

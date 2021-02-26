@@ -36,7 +36,7 @@ export const Styledtitle = styled.h2`
 export const StyledSubTitle = styled.p`
   font-size: ${(props) => props.size}px;
   text-align: center;
-  color: ${(props) => (props.color ? props.color : colors.primary)};
+  color: #50248f;
   padding: 5px;
   margin-bottom: 25px;
 `;
@@ -56,17 +56,17 @@ export const StyledButton = styled(Link)`
   width: 150px;
   background-color: transparent;
   font-size: 16px;
-  border: 2px solid tomato;
-  border-radius: 10px;
-  color: purple;
+  border: 2px solid #50248f;
+  border-radius: 8px;
+  color: #ed6347;
   text-decoration: none;
   text-align: center;
   transition: ease-in-out 0.5s;
   outline: 0;
 
   &:hover {
-    background-color: ${colors.primary};
-    color: ${colors.theme};
+    background-color: ${colors.theme};
+    color: ${colors.primary};
     cursor: pointer;
   }
 `;
