@@ -1,18 +1,8 @@
-### FS 1010 course project image gallery web app
+### FS 1010 course project portfolio Web App
 
-2021-1
+2021-1 ~ 2021-2 (Shijing Liu)
 
-install all dependencies before run
-
-```
-npm install
-```
-
-```
-npm start
-```
-
-Enable backend repo https://github.com/shijing0628/FS1020-course-project-final at port 5000.
+**Enable backend repo https://github.com/shijing0628/FS1020-course-project-final at port 5000. Please find this repo and run it before start frontend part.**
 
 ```
 npm install
@@ -22,7 +12,17 @@ npm install
 npm run dev
 ```
 
-**Image gallery web app project introduction**
+**install all dependencies before start!**
+
+```
+npm install
+```
+
+```
+npm start
+```
+
+**Brenda portfolio web app project introduction**
 
 - navbar: class component + css file
 - react router to link different pages
@@ -44,18 +44,26 @@ npm run dev
 - theme can toggle background color
 - add social media icons
 - react-notifications-component for successfully submit the contact form
+- fully responsive on mobile devices
 
 ![](2021-02-22-10-33-11.png)
 
 ![](2021-02-22-10-33-38.png)
+
 ![](2021-02-22-10-33-59.png)
+
 ![](2021-02-22-10-34-22.png)
+
 ![](2021-02-22-10-34-41.png)
+
 ![](2021-02-22-10-36-40.png)
+
 ![](2021-02-24-09-00-30.png)
 
 <br>
 
 ![](2021-02-24-14-43-55.png)
+
 ![](2021-02-24-15-18-28.png)
+
 ![](2021-02-26-10-12-21.png)
